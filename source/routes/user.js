@@ -18,5 +18,5 @@ router.post("/signin", validateSignin, isRequestValidated, signin);
 router.get("/homepage", requireSignin, (req, res) => {
   res.status(200).json({ user: "welcome to profile" });
 });
-
+///
 module.exports = router;
